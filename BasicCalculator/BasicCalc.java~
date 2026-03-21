@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class BasicCalc{
+    public static void main(String args[]){
+	System.out.println("Enter the numbers");
+	
+	Scanner uInput = new Scanner(System.in);
+
+	System.out.println("Specify the operation you want to perform");
+	String ope = uInput.nextLine();
+	if(ope == "/"){
+	    System.out.println("Now enter the two digits you want to calculate");
+	double num = Arith.divi(uInput.nextInt(),uInput.nextInt());
+	}
+
+	//double l = calc.divi(12, 3);
+	//System.out.printf("%d %n%d %n%d %n%.0f %n", i,j,k,l);
+    }
+}
+
+class Arith{
+    public static int add(int a, int b){
+	return a + b;
+    }
+
+    public static int sub(int a, int b){
+	return a - b;
+    }
+
+    public static int multi(int a, int b){
+	return a * b;
+    }
+
+    public static double divi(int a, int b){
+	if(a == 0 || b == 0)
+	    return 0;
+	else
+	    return a / b;
+    }
+}
