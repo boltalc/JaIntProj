@@ -7,10 +7,13 @@ public class BasicCalc{
 	final String END = "\u001B[0m";
 	final String BLUE = "\u001B[34m";
 	final String RED = "\u001B[31m";
+	
 	System.out.println("Specify the operation you want to perform");
 	System.out.printf("%sType 'A' to select addition%nType 'S' to select subtraction%nType 'M' to select multiplication%nType 'D' to select division%s%n",BLUE,END);
 	System.out.println();
+       
 	char ope = uInput.next().charAt(0);
+       
 	System.out.println();
 	String message = "You have selected ";
 	String midi = " operation, now enter the two digits you want to calculate one after the other";
